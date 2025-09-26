@@ -1,4 +1,4 @@
-
+![Preview](CommandBypass.png)
 # PHP disable_functions Bypass Exploit (CVE-2022-XXXXX)
 
 ![PHP Version](https://img.shields.io/badge/PHP-7.3%20%E2%80%93%208.1-777BB4?style=for-the-badge&logo=php)
